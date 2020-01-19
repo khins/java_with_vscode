@@ -8,7 +8,7 @@ public class MethodOverloaded {
     }
 
     private static Object square(double d) {
-        System.out.printf("%ncalled square with int argument", d);
+        System.out.printf("%ncalled square with double argument", d);
         return d * d;
     }
 
