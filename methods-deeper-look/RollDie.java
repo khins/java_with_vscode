@@ -1,47 +1,21 @@
 import java.security.SecureRandom;
 // Roll a six-sided die 6,000,000 times
+// now Die-rolling program using arrays instead of switch
+// video https://learning.oreilly.com/videos/java-8-fundamentals/9780133489354/9780133489354-JFUN_lesson07_06
 public class RollDie {
 
     public static void main(String[] args) {
         SecureRandom random = new SecureRandom();
+        int[] frequency = new int[7];
 
-        int freq1 = 0;
-        int freq2 = 0;
-        int freq3 = 0;
-        int freq4 = 0;
-        int freq5 = 0;
-        int freq6 = 0;
-
-        for (int i = 0; i <= 6000000; i++) {
-            int face = 1 + random.nextInt(6);
-
-            switch (face) {
-                case 1:
-                    ++freq1;
-                    break;
-
-                case 2:
-                    ++freq2;
-                    break;
-
-                case 3:
-                    ++freq3; 
-                    break;
-
-                case 4:
-                    ++freq4;    
-                    break;
-
-                case 5:
-                    ++freq5; 
-                    break;
-
-                case 6:
-                    ++freq6;
-                    break;
-            }
+        for (int i = 1; i <= 6000000; i++) {
+            ++frequency[1+random.nextInt(6)];
         }
+
         System.out.println("Face\tFrequency");
-        System.out.printf("1\t%d%n2\t%d%n3\t%d%n4\t%d%n5\t%d%n6\t%d%n", freq1, freq2, freq3, freq4, freq5, freq6);
+
+        for (int i = 0; i < frequency.length; i++) {
+            System.out.printf("%4d%10d%n", i, frequency[i]);
+        }
     }
 }
