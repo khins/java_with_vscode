@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="ps-examples/|src/|arrays/|control-statements/|methods-deeper-look/" kind="src" path=""/>
+	<classpathentry kind="src" path="arrays"/>
+	<classpathentry kind="src" path="control-statements"/>
+	<classpathentry kind="src" path="methods-deeper-look"/>
+	<classpathentry kind="src" path="ps-examples"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
