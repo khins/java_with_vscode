@@ -2,6 +2,7 @@ import java.util.ArrayList;
 // Generic ArrayList<T> collection demonstration
 // video https://learning.oreilly.com/videos/java-8-fundamentals/9780133489354/9780133489354-JFUN_lesson07_17
 /*
+c:\Users\kevin\Documents\Learning Library\Java\java_with_vscode\bin>java -classpath "C:\Users\kevin\Documents\Learning Library\Java\java_with_vscode\bin" ArrayListCollection
 Display list of contents with counter controlled loop yellow redformat yellow red
 format yellow red green yellow
 format red yellow
