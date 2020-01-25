@@ -6,6 +6,7 @@ import static java.lang.Math.*;
 public class StaticImportTest {
 
     public static void main(final String[] args) {
+        // you should always access the static methods of a class fully qualified name
         System.out.printf("sqrt(900) = %.1f%n", sqrt(900.0)); // bad programming practices
         System.out.printf("ceil(-9.8) = %.1f%n", ceil(-9.8));
 
